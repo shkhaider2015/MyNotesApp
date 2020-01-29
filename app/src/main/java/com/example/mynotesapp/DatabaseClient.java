@@ -16,7 +16,7 @@ public class DatabaseClient {
         this.mCtx = mCtx;
 
         // Here MyToDos is the name of the Database
-        appDatabase = Room.databaseBuilder(mCtx, AppDatabase.class, "MyToDos" ).build();
+        appDatabase = Room.databaseBuilder(mCtx, AppDatabase.class, "MyToDos1" ).build();
 
     }
 

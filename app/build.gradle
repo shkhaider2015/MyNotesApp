@@ -21,7 +21,7 @@ android {
 
 dependencies {
     //define versions
-    def support_version = "27.0.2"
+    def support_version = "28.0.0"
     def room_version = "1.1.1"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -36,14 +36,15 @@ dependencies {
     implementation "com.android.support:design:$support_version"
 
     //card view
-    implementation "com.android.support:cardview-v7:$support_version"
+    implementation 'androidx.cardview:cardview:1.0.0'
+
 
     //recyclerview
-    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
 
     //room
-    implementation "android.arch.persistence.room:runtime:$room_version"
-    annotationProcessor "android.arch.persistence.room:compiler:$room_version"
-    testImplementation "android.arch.persistence.room:testing:$room_version"
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    testImplementation "android.arch.persistence.room:testing:1.1.1"
 
 }

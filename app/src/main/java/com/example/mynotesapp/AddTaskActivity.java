@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 public class AddTaskActivity extends AppCompatActivity {
 
     private EditText editTextTask, editTextDesc, editTextFinishBy;
+    private static final String TAG = "AddTaskActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +71,9 @@ public class AddTaskActivity extends AppCompatActivity {
                 task.setFinishBy(sFinishedBy);
                 task.setFinished(false);
 
-                //adding to databae
+                Log.d(TAG, "doInBackground: gfhfg " + task.getTask());
+
+                //adding to database
                 DatabaseClient.getInstance(getApplicationContext())
                         .getAppDatabase()
                         .taskDao()
