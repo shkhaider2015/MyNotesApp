@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/status"
                 android:text="Go Bring Eggs"
+                android:fontFamily="@font/schoolbully"
                 android:layout_marginTop="5dp"
                 android:textStyle="bold"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
@@ -48,6 +49,7 @@
                 android:textColor="@color/status"
                 android:layout_marginTop="10dp"
                 android:text="Bring 6 eggs from super market"
+                android:fontFamily="@font/alphathin"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
             <TextView
@@ -56,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/status"
                 android:text="5pm today"
+                android:fontFamily="@font/alphathin"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
 
